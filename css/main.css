@@ -20,7 +20,9 @@ ul li{
 a{
     text-decoration: none;
 }
-
+a:hover,a:focus{
+    text-decoration: none;
+}
 /* 属性重置 */
 
 body{
