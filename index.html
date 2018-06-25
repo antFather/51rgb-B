@@ -4,25 +4,46 @@
 <head>
     <title>汽车新闻</title>
     <meta charset="utf-8">
-    <!-- <script src="./js/flexible.js" type="text/javascript"></script> -->
-    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
-    <script src="./js/jquery1.42.min.js" type="text/javascript" ></script>
-    <script src="./js/carNew.js" type="text/javascript"></script>
+    <script src="./js/flexible.js" type="text/javascript"></script>
+    <!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script> -->
+    <!-- <script src="./js/jquery1.42.min.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <!-- <script src="./js/carNew.js" type="text/javascript"></script> -->
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link rel="stylesheet" href="./css/normallize.css" type="text/css">
-<link rel="stylesheet" href="http://at.alicdn.com/t/font_714724_l7vvjalr2f.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_714724_l7vvjalr2f.css">
 </head>
+
 <body>
-   <header>
-       <a href="#">二手车</a>
-       <h2>汽车新闻</h2>
-       <a href="#" class="Home">
-           <i class="iconfont icon-htmal5icon06 "></i>
+    <header>
+        <a href="#">二手车</a>
+        <h2>汽车新闻</h2>
+        <a href="#" class="Home">
+            <i class="iconfont icon-htmal5icon06 "></i>
         </a>
-   </header>
-   <div class="newbox">
-        <ul>
-            <li>
+    </header>
+    <div id="app">
+
+        <!-- <p> -->
+        <!-- 使用 router-link 组件来导航. -->
+        <!-- 通过传入 `to` 属性指定链接. -->
+        <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+        <!-- <router-link to="/foo">Go to Foo</router-link>
+            <router-link to="/bar">Go to Bar</router-link> -->
+        <!-- </p> -->
+        <!-- 路由出口 -->
+        <!-- 路由匹配到的组件将渲染在这里 -->
+        <!-- <keep-alive> -->
+             <router-view></router-view>
+        <!-- </keep-alive>    -->
+    </div>
+
+    <!-- <div class="newbox"> -->
+
+        <!-- <ul>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -30,7 +51,7 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-            <li>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -38,7 +59,7 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-            <li>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -46,7 +67,7 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-            <li>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -54,7 +75,7 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-            <li>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -62,7 +83,7 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-            <li>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -70,7 +91,7 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-            <li>
+            <li class="item">
                 <p class="title">最美自主车致尚XT竞争力分析</p>
                 <div class="info">
                     <span>07-04 06:30</span>
@@ -78,37 +99,155 @@
                 </div>
                 <div class="pic-icon"></div>
             </li>
-        </ul>
-        <div class="backtop-box">
+        </ul> -->
+        <!-- <div class="backtop-box hidden">
             <span>加载中</span>
             <div class="backtop">返回顶部
                 <i class="iconfont icon-uparrow"></i>
             </div>
         </div>
-    </div>
-   
-   <nav>
-       <ul>
-           <li><a href="#">首页</a></li>
-           <li><a href="#">新闻</a></li>
-           <li><a href="#">体育</a></li>
-           <li><a href="#">娱乐</a></li>
-           <li><a href="#">女人</a></li>
-           <li><a href="#">导航</a></li>
-       </ul>
-   </nav>
-   <footer>
+    </div> -->
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">新闻</a>
+            </li>
+            <li>
+                <a href="#">体育</a>
+            </li>
+            <li>
+                <a href="#">娱乐</a>
+            </li>
+            <li>
+                <a href="#">女人</a>
+            </li>
+            <li>
+                <a href="#">导航</a>
+            </li>
+        </ul>
+    </nav>
+    <footer>
         <div class="footer-nav">
             <ul>
-                <li><a href="#">彩版</a></li>
-                <li><a href="#">触版</a></li>
-                <li><a href="#">PC版</a></li>
-                <li><a href="#">客户端</a></li>
+                <li>
+                    <a href="#">彩版</a>
+                </li>
+                <li>
+                    <a href="#">触版</a>
+                </li>
+                <li>
+                    <a href="#">PC版</a>
+                </li>
+                <li>
+                    <a href="#">客户端</a>
+                </li>
             </ul>
         </div>
         <p class="cooperate">留言-合作</p>
         <p class="copyright">Copyright©2013 Souhu.com</p>
-   </footer>
+    </footer>
 </body>
+<script type="text/javascript">
+const newbox = {template: `
+<div class="newbox">
+    <ul>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div> 
+        </router-link>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div>
+        </router-link>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div>
+        </router-link>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div>
+        </router-link>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div>
+        </router-link>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div>
+        </router-link>
+        <router-link to="/desc" tag="li" class="item">
+            <p class="title"> 最美自主车致尚XT竞争力分析</p>
+            <div class="info">
+                <span> 07 - 04 06: 30</span>
+                <span> 搜狐汽车</span>
+            </div>
+            <div class="pic-icon"></div>
+        </router-link>
+    </ul>
+    <div class="backtop-box">
+        <span>加载中</span>
+        <router-link to="/desc" tag="a" class="backtop">返回详情
+            <i class="iconfont icon-uparrow"></i>
+        </router-link>
+    </div>
+</div>
 
+    `} 
+const desc = {template: `
+    <div class="descwrap">
+        <div class="descbox">
+            <h2> 权利的游戏-- -- --鱼梁木百科 </h2>
+            <p class="author"> 2014 - 11 - 26 搜狐汽车 </p>
+            <div class="line"> </div>
+            <div class="pic">
+                <img src="./img/t.jpg" alt="...">
+            </div>
+            <p class="intro"> 权利的游戏中的鱼梁木是三眼乌鸦藏身的地方</p>
+            <section class="content">鱼梁木(Weirwood)是—种遍布维斯特洛大陆的落叶乔木。它的树皮灰臼如骨，叶色深红，有如干只染血手掌。多数鱼梁木的树干上刻有人脸，据说是古代的森林之子在先民渡过狭海而来之前刻上去
+            的。[1]现在的自由民和其余先民的后裔会在鱼梁木上继续雕刻。有时还会用树的汁液将雕刻的眼睛染成红色，当汁液滴下，看起来就像心树泣血。
+             </section>
+    </div>
+        <div class="backtop-box">
+            <span> 加载中</span>
+            <router-link to="/" tag="a" class="backtop"> 返回列表
+                <i class="iconfont icon-uparrow"></i>
+            </router-link>
+        </div>
+    </div>
+    `}
+const routes = [
+{path: '/',component:newbox}, 
+{path: '/desc',component: desc} 
+] 
+const router = new VueRouter({ routes })
+const app = new Vue({ router }).$mount('#app')
+</script>
 </html>
